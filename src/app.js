@@ -21,6 +21,8 @@ hbs.registerPartials(partialsPath);
 // Setup server to serve static files and location
 app.use(express.static(publicPath));
 
+console.log("App is Running!");
+
 
 app.get('/', (req, res) => {
     res.render('index', {
